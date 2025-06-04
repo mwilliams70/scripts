@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CYAN='\033[0;36m'
+RESET='\033[0m'
+
+name="myhost"
+printf "[%s]\n" "$(printf '%10s' "%name")"
+
+hostname=$(hostname)
+
+printf "${CYAN}Hostname${RESET}:[%s]\n" "$(printf '%50s' "$hostname")"
